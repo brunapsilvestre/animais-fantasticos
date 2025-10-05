@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./../styles/style.css">
   <title>Animais Fantásticos</title>
 </head>
@@ -98,37 +101,44 @@
         </p>
       </section>
     </div>
-    <section class="grid-section faq" id="faq">
-      <h1 class="faq-title">FAQ</h1>
-      <dl class="faq__list">
-        <dt class="faq__list-title">Qual a idade dos animais?</dt>
-        <dd class="faq__list-description">A idade dos animais pode variar bastante dependendo da espécie, do ambiente e de
-          suas condições de vida. Por exemplo, uma raposa pode viver cerca de 3 a 5 anos na natureza, mas pode alcançar até 10
-          anos em cativeiro. Os esquilos têm uma expectativa de vida de 6 a 12 anos em ambientes controlados, mas em vida
-          selvagem geralmente vivem de 1 a 3 anos. Ursos podem viver até 20 anos na natureza, sendo que alguns tipos, como o
-          urso pardo, podem viver até 30 anos em cativeiro. Lobos vivem em média 6 a 8 anos, mas podem alcançar até 13 anos em
-          cativeiro. Macacos, dependendo da espécie, têm uma vida útil variando entre 15 a 40 anos, com os mais comuns vivendo
-          entre 20 a 30 anos. O leão, por sua vez, pode viver de 10 a 14 anos na natureza, e até 20 anos em cativeiro.</dd>
-        <dt class="faq__list-title">Eles são fantásticos?</dt>
-        <dd class="faq__list-description">Sim, esses animais são de fato fantásticos! Cada um deles tem características únicas
-          que os tornam fascinantes. A raposa, por exemplo, é extremamente adaptável e astuta, o que a torna um símbolo de
-          inteligência na cultura popular. Já o leão, com sua presença majestosa e comportamento de líder, é frequentemente
-          visto como o "rei da selva", sendo uma figura central em muitas mitologias.</dd>
-        <dt class="faq__list-title">Qual a diferença?</dt>
-        <dd class="faq__list-description">A principal diferença entre esses animais é o seu comportamento e o papel que
-          desempenham em seus ecossistemas. A raposa é solitária e muitas vezes caça à noite, adaptando-se a ambientes
-          diversos. O esquilo, por sua vez, é mais social e tem hábitos diurnos, com um foco em armazenar alimentos para o
-          inverno. Os ursos, além de serem onívoros, variam em sua dieta dependendo da espécie, e têm hábitos mais solitários,
-          exceto durante a temporada de acasalamento ou quando mãe e filhotes estão juntos.</dd>
-        <dt class="faq__list-title">Como proteger?</dt>
-        <dd class="faq__list-description">Proteger esses animais envolve principalmente a preservação de seus habitats
-          naturais e a criação de condições favoráveis para sua sobrevivência. A raposa e o esquilo, por exemplo, podem ser
-          protegidos garantindo áreas de floresta e evitando a caça predatória. Já os ursos e lobos exigem grandes territórios
-          para caçar e se reproduzir, sendo importante a criação de reservas e áreas de proteção</dd>
-      </dl>
-    </section>
   </section>
-  <section class="grid-section contact" id="contact">
+
+  <!-- 
+    Estava "grid-section" mas o certo é "grid__section" e essa section estava dentro da
+    grid__container que esta errado, é fora.
+  -->
+  <section class="grid__section faq" id="faq">
+    <h1 class="faq-title">FAQ</h1>
+    <dl class="faq__list">
+      <dt class="faq__list-title">Qual a idade dos animais?</dt>
+      <dd class="faq__list-description">A idade dos animais pode variar bastante dependendo da espécie, do ambiente e de
+        suas condições de vida. Por exemplo, uma raposa pode viver cerca de 3 a 5 anos na natureza, mas pode alcançar até 10
+        anos em cativeiro. Os esquilos têm uma expectativa de vida de 6 a 12 anos em ambientes controlados, mas em vida
+        selvagem geralmente vivem de 1 a 3 anos. Ursos podem viver até 20 anos na natureza, sendo que alguns tipos, como o
+        urso pardo, podem viver até 30 anos em cativeiro. Lobos vivem em média 6 a 8 anos, mas podem alcançar até 13 anos em
+        cativeiro. Macacos, dependendo da espécie, têm uma vida útil variando entre 15 a 40 anos, com os mais comuns vivendo
+        entre 20 a 30 anos. O leão, por sua vez, pode viver de 10 a 14 anos na natureza, e até 20 anos em cativeiro.</dd>
+      <dt class="faq__list-title">Eles são fantásticos?</dt>
+      <dd class="faq__list-description">Sim, esses animais são de fato fantásticos! Cada um deles tem características únicas
+        que os tornam fascinantes. A raposa, por exemplo, é extremamente adaptável e astuta, o que a torna um símbolo de
+        inteligência na cultura popular. Já o leão, com sua presença majestosa e comportamento de líder, é frequentemente
+        visto como o "rei da selva", sendo uma figura central em muitas mitologias.</dd>
+      <dt class="faq__list-title">Qual a diferença?</dt>
+      <dd class="faq__list-description">A principal diferença entre esses animais é o seu comportamento e o papel que
+        desempenham em seus ecossistemas. A raposa é solitária e muitas vezes caça à noite, adaptando-se a ambientes
+        diversos. O esquilo, por sua vez, é mais social e tem hábitos diurnos, com um foco em armazenar alimentos para o
+        inverno. Os ursos, além de serem onívoros, variam em sua dieta dependendo da espécie, e têm hábitos mais solitários,
+        exceto durante a temporada de acasalamento ou quando mãe e filhotes estão juntos.</dd>
+      <dt class="faq__list-title">Como proteger?</dt>
+      <dd class="faq__list-description">Proteger esses animais envolve principalmente a preservação de seus habitats
+        naturais e a criação de condições favoráveis para sua sobrevivência. A raposa e o esquilo, por exemplo, podem ser
+        protegidos garantindo áreas de floresta e evitando a caça predatória. Já os ursos e lobos exigem grandes territórios
+        para caçar e se reproduzir, sendo importante a criação de reservas e áreas de proteção</dd>
+    </dl>
+  </section>
+
+  <!-- Estava grid-section mas o certo é "grid__section" -->
+  <section class="grid__section contact" id="contact">
     <h1 class="contact-title">Contato</h1>
     <div class="map">
       <img src="./../img/mapa.png" alt="map-image">
